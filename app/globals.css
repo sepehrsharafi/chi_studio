@@ -639,6 +639,35 @@ button:focus-visible {
   pointer-events: none;
 }
 
+.contact-panel__logo {
+  position: absolute;
+  top: 50%;
+  left: clamp(-8rem, -6vw, -3rem);
+  width: clamp(18rem, 38vw, 34rem);
+  height: auto;
+  opacity: 0.055;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+  transform: translateY(-50%) rotate(-12deg);
+}
+
+.footer-brand-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2.5vw, 2.5rem);
+}
+
+.footer-brand-mark {
+  width: clamp(5rem, 14vw, 11rem);
+  height: auto;
+  flex: 0 0 auto;
+  padding: clamp(0.5rem, 1vw, 0.85rem);
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: clamp(1.25rem, 3vw, 2.75rem);
+  background: rgb(255 255 255 / 5%);
+}
+
 .hero-copy {
   padding-inline: 1.25rem;
 }
@@ -848,6 +877,35 @@ button:focus-visible {
   rotate: 18deg;
   transform: translate(calc(var(--section-x) * 48px), calc(var(--section-y) * 48px));
   transition: transform 300ms cubic-bezier(0.2, 0.75, 0.2, 1);
+}
+
+.section-backdrop__logo {
+  position: absolute;
+  right: -8%;
+  bottom: -20%;
+  width: clamp(22rem, 46vw, 42rem);
+  height: auto;
+  opacity: 0.045;
+  filter: brightness(0);
+  transform: translate(calc(var(--section-x) * -22px), calc(var(--section-y) * -22px)) rotate(-12deg);
+  transition: transform 360ms cubic-bezier(0.2, 0.75, 0.2, 1);
+}
+
+#games .section-backdrop__logo {
+  right: auto;
+  bottom: 8%;
+  left: -12%;
+  width: clamp(26rem, 56vw, 54rem);
+  opacity: 0.065;
+  filter: brightness(0) invert(1);
+  transform: translate(calc(var(--section-x) * 24px), calc(var(--section-y) * 24px)) rotate(11deg);
+}
+
+#process .section-backdrop__logo {
+  right: -6%;
+  bottom: -28%;
+  width: clamp(24rem, 50vw, 46rem);
+  transform: translate(calc(var(--section-x) * -18px), calc(var(--section-y) * -18px)) rotate(-7deg);
 }
 
 .section-backdrop__pixels {

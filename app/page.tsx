@@ -1,3 +1,4 @@
+import Image from "next/image";
 import DynamicNav from "./dynamic-nav";
 import InteractiveCard from "./interactive-card";
 import InteractiveHero from "./interactive-hero";
@@ -301,6 +302,14 @@ export default function Home() {
       <section id="contact" className="scroll-mt-0 px-4 pb-4 pt-4 sm:px-6 sm:pb-6 lg:px-10 lg:pb-10">
         <InteractiveCard className="contact-panel relative mx-auto max-w-[1280px] overflow-hidden rounded-[1.75rem] border border-white/10 bg-ink px-6 py-12 text-cream sm:px-10 sm:py-14 lg:px-14 lg:py-16">
           <div className="contact-panel__grid absolute inset-0" aria-hidden="true" />
+          <Image
+            alt=""
+            aria-hidden="true"
+            className="contact-panel__logo"
+            height={1000}
+            src="/Chi Studio Logo.svg"
+            width={1000}
+          />
           <div className="absolute -left-12 top-1/2 h-px w-48 -rotate-12 bg-coral/60" aria-hidden="true" />
           <div className="relative z-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
@@ -329,8 +338,16 @@ export default function Home() {
               <a className="grid size-12 place-items-center rounded-full border border-white/20 transition-colors hover:bg-white hover:text-ink" href="#top" aria-label="بازگشت به بالای صفحه">↑</a>
             </div>
           </div>
-          <div className="overflow-hidden py-8 sm:py-10">
-            <p className="select-none text-center font-black leading-[0.8] tracking-[-0.08em] text-cream [font-size:clamp(6rem,20vw,17rem)]" dir="ltr">CHI</p>
+          <div className="footer-brand-lockup overflow-hidden py-8 sm:py-10" aria-label="CHI Studio">
+            <Image
+              alt=""
+              aria-hidden="true"
+              className="footer-brand-mark"
+              height={1000}
+              src="/Chi Studio Logo.svg"
+              width={1000}
+            />
+            <p className="select-none font-black leading-[0.8] tracking-[-0.08em] text-cream [font-size:clamp(6rem,20vw,17rem)]" dir="ltr">CHI</p>
           </div>
           <div className="flex flex-col gap-2 border-t border-white/15 pt-5 text-[0.65rem] text-white/35 sm:flex-row sm:justify-between">
             <span>© ۲۰۲۶ استودیو چی. تمام حقوق محفوظ است.</span>

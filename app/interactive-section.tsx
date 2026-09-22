@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 type InteractiveSectionProps = {
@@ -42,6 +43,13 @@ export default function InteractiveSection({
         <span className="section-backdrop__grid" />
         <span className="section-backdrop__ring" />
         <span className="section-backdrop__core" />
+        <Image
+          alt=""
+          className="section-backdrop__logo"
+          height={1000}
+          src="/Chi Studio Logo.svg"
+          width={1000}
+        />
         <span className="section-backdrop__pixels">
           <i /><i /><i /><i /><i />
         </span>
